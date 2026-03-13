@@ -1,0 +1,114 @@
+@import "~antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Add your custom styles below */
+
+:root {
+  /* fintech color palette */
+  --primary-color: #667eea;          /* vibrant blue */
+  --primary-color-hover: #5568d3;    /* darker blue for hover */
+  --secondary-color: #f4f6fb;        /* very light blue background */
+  --accent-color: #764ba2;           /* purple accent */
+  --bg-color: #ffffff;               /* page background */
+  --text-color: #1a202c;             /* main text */
+  --text-color-light: #718096;       /* secondary text */
+  --card-bg: #ffffff;
+  --danger-color: #f56565;
+  --success-color: #48bb78;
+  --font-family: 'Inter', 'Poppins', 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: var(--font-family);
+}
+
+/* utility classes */
+
+body.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-theme .navbar {
+  background-color: #1f1f1f;
+}
+
+body.dark-theme .signup-signin-container,
+body.dark-theme .my-table,
+body.dark-theme .dashboard-container {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-theme .ant-card {
+  background: #1e1e1e !important;
+}
+
+body.dark-theme .ant-table {
+  background: #1e1e1e !important;
+}
+
+body.dark-theme .btn {
+  border-color: #667eea;
+}
+
+body.dark-theme .btn-blue {
+  background-color: #667eea;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  border: 1px solid #667eea;
+  border-radius: 0.25rem;
+  background-color: var(--bg-color);
+  color: #667eea;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #5568d3;
+  border-color: #5568d3;
+  color: #fff;
+}
+
+.btn-blue {
+  background-color: #667eea;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #5568d3;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 90vh;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .signup-signin-container {
+    width: 90vw;
+    min-width: unset;
+    padding: 1.5rem;
+  }
+}
+
